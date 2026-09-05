@@ -1,6 +1,6 @@
 cask "activitysnitch" do
-  version "1.0.1"
-  sha256 "9edab81df69c17684499400f9ad401dbf17c0355eb180c23ef545c13b7a2fa17"
+  version "1.0.2"
+  sha256 "e39a6407903878f94e61222b583fff2d50490d40e70764c05c6e8ada3e752fb4"
 
   url "https://github.com/momorientes/activitysnitch/releases/download/v#{version}/ActivitySnitch-#{version}.zip"
   name "ActivitySnitch"
