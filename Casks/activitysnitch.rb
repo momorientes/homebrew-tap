@@ -7,7 +7,7 @@ cask "activitysnitch" do
   desc "Menubar watchdog that flags and quits processes with sustained high Energy Impact"
   homepage "https://github.com/momorientes/activitysnitch"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "ActivitySnitch.app"
 
