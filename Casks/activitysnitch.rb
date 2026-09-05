@@ -11,6 +11,13 @@ cask "activitysnitch" do
 
   app "ActivitySnitch.app"
 
+  # The app is ad-hoc signed, not notarized, so Gatekeeper would block the
+  # quarantined copy. Fine for a personal tap; the proper fix is notarization.
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/ActivitySnitch.app"]
+  end
+
   uninstall quit: "network.noscito.ActivitySnitch"
 
   zap trash: [
